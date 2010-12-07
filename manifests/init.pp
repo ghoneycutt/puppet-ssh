@@ -40,8 +40,9 @@ class ssh {
     } # sshkey
 
     service { "sshd":
-        ensure  => running,
-        enable  => true,
+        ensure    => running,
+        enable    => true,
+        hasstatus => true,
     } # service
 
     # Definition: ssh::private_key

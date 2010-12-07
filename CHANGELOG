@@ -3,3 +3,7 @@
 
 1.0.1 - 20100812
     * added documentation
+
+1.0.2 - 20101207
+    * added 'hasstatus => true' to the sshd service, since the output of ps(1)
+      can be misleading
